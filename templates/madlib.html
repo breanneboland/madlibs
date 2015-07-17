@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>{% block title %}Let's make with the funny.{% endblock %}</title>
+    <link rel="stylesheet" href="static/madlibs.css">
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <p>There once was a <span class="word">{{ color }} {{ noun }}</span> sitting in the Hackbright Lab. When <span class="word">{{ person }}</span> went to pick it up, it burst into flames in a totally <span class="word">{{ adjective }}</span> way.</p>
+    {% endblock %}
+</body>
+</html>

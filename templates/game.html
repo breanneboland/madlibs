@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Alright! Let's do this.</title>
+    <link rel="stylesheet" href="static/madlibs.css">
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <form action="/madlib">
+        <p>
+            <label>Name of Person:</label>
+            <input type="text" name="person" id="person_name"><br>
+        </p>
+        <p>
+        <label>Color:</label>
+            <select name="color" id="color-name">
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+                <option value="white">White</option>
+                <option value="chartreuse">Chartreuse</option>
+                <option value="black">Black</option>
+            </select><br>
+        </p>
+        <p>    
+        <label>Pick a noun:</label>
+            <input type="text" name="noun" id="noun-name"><br>
+        </p>
+        <p>
+        <label>Select an adjective:</label>
+            <input type="text" name="adjective" id="adjective-name"><br>
+        </p>
+        <input type="submit" value="Let's play!">
+    </form>
+
+    {% endblock %}
+
+</body>
+</html>
